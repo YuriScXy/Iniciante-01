@@ -1,0 +1,49 @@
+/*para começo ,deve- se saber que você deve colocar a biblioteca em que trabalhara*/
+
+/*no caso essa aqui ==>  #include<stdio.h> <== */
+
+#include<stdio.h>
+
+/* depois devemos declarar nosso meio principal */
+
+/* este aqui ==>   int main(){   <==  */
+
+int main(){
+/* sempre que formos programar devemos entender a variavel que vamos usar ,para dado problema */
+/* temos varios tipos de variaveis dentre elas ,aprenda as basicas primeiro
+   
+   int     = representa mumeros inteiro
+   float   = representa mumeros reais com muita precisão
+   double  = representa mumeros reais com pouca precisão
+   char    = armazena um tipo de caracter, como letra, acentos ,e ate mesmo numeros só que não são entendidos como numeros
+   boolean = um operador logico, que tenta devolver verdade ou falso
+   
+   estes são os principais a ser seguido */
+   
+   int n1,n2,n3,resulta,quadrado;
+   
+   /* apos eu ter declarado minhas variaveis do tipo inteiro eu terei de dar uma entrada */
+   
+   /* essas estrandas são dadas com ==> scanf("%d",&variavel);  <== seguindo este padrao*/
+   
+   scanf("%d",&n1);
+   scanf("%d",&n2);
+   scanf("%d",&n3);
+   
+   /* apos ter declarado todas minhas variaveis e entradas, pode se fazer a operação que quiser*/
+
+   resulta= (n1*100)+(n2*10)+(n3);
+   quadrado= (resulta)*(resulta);
+   
+   /* no caso estou concatenando os numeros e calculando seu quadrado*/
+
+   if(n1 < 10 && n2 < 10 && n3 < 10){
+   
+   /* aqui no caso estou imprimindo os resultados*/
+   
+        printf("%d, %d",resulta,quadrado);
+
+   }else
+     printf("DIGITO INVALIDO");
+
+  }
